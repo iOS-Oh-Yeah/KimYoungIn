@@ -11,7 +11,6 @@
 		A9DB8966285B27D30057E483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB8965285B27D30057E483 /* AppDelegate.swift */; };
 		A9DB8968285B27D30057E483 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB8967285B27D30057E483 /* SceneDelegate.swift */; };
 		A9DB896A285B27D30057E483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB8969285B27D30057E483 /* ViewController.swift */; };
-		A9DB896D285B27D30057E483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DB896B285B27D30057E483 /* Main.storyboard */; };
 		A9DB896F285B27D40057E483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DB896E285B27D40057E483 /* Assets.xcassets */; };
 		A9DB8972285B27D40057E483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DB8970285B27D40057E483 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -22,7 +21,6 @@
 		A9DB8965285B27D30057E483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9DB8967285B27D30057E483 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A9DB8969285B27D30057E483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A9DB896C285B27D30057E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9DB896E285B27D40057E483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DB8971285B27D40057E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9DB8973285B27D40057E483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,15 +69,46 @@
 		A9DB8964285B27D30057E483 /* Weather-Clone */ = {
 			isa = PBXGroup;
 			children = (
-				A9DB8965285B27D30057E483 /* AppDelegate.swift */,
-				A9DB8967285B27D30057E483 /* SceneDelegate.swift */,
-				A9DB8969285B27D30057E483 /* ViewController.swift */,
-				A9DB896B285B27D30057E483 /* Main.storyboard */,
-				A9DB896E285B27D40057E483 /* Assets.xcassets */,
-				A9DB8970285B27D40057E483 /* LaunchScreen.storyboard */,
+				A9DB897F285D95390057E483 /* Configuration */,
+				A9DB8980285D953E0057E483 /* Scene */,
 				A9DB8973285B27D40057E483 /* Info.plist */,
 			);
 			path = "Weather-Clone";
+			sourceTree = "<group>";
+		};
+		A9DB897F285D95390057E483 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB8982285D95540057E483 /* Supports */,
+				A9DB8981285D954A0057E483 /* Resources */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A9DB8980285D953E0057E483 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB8969285B27D30057E483 /* ViewController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		A9DB8981285D954A0057E483 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB896E285B27D40057E483 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A9DB8982285D95540057E483 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB8970285B27D40057E483 /* LaunchScreen.storyboard */,
+				A9DB8965285B27D30057E483 /* AppDelegate.swift */,
+				A9DB8967285B27D30057E483 /* SceneDelegate.swift */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 		D8FFA9EC15CF47E0859530C5 /* Pods */ = {
@@ -88,7 +117,6 @@
 				738C02730DE3D2ACE22586B3 /* Pods-Weather-Clone.debug.xcconfig */,
 				B9121BCFD0EED15BC7847F9A /* Pods-Weather-Clone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,7 +182,6 @@
 			files = (
 				A9DB8972285B27D40057E483 /* LaunchScreen.storyboard in Resources */,
 				A9DB896F285B27D40057E483 /* Assets.xcassets in Resources */,
-				A9DB896D285B27D30057E483 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,14 +243,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A9DB896B285B27D30057E483 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9DB896C285B27D30057E483 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A9DB8970285B27D40057E483 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,7 +380,6 @@
 				INFOPLIST_FILE = "Weather-Clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,7 +407,6 @@
 				INFOPLIST_FILE = "Weather-Clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
