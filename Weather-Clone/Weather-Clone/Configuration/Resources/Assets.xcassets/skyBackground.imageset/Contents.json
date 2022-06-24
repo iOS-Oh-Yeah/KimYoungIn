@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "skyBackground 1.png",
+      "filename" : "iPhone 13 mini - 5.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "skyBackground 1@2x.png",
+      "filename" : "iPhone 13 mini - 5@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "skyBackground 1@3x.png",
+      "filename" : "iPhone 13 mini - 5@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
