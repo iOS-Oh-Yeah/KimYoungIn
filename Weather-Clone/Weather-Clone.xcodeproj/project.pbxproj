@@ -21,7 +21,7 @@
 		A9DD3F792865821C00E47F6F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F782865821C00E47F6F /* UIColor.swift */; };
 		A9DD3F7E28658CE100E47F6F /* TodayWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F7D28658CE100E47F6F /* TodayWeatherTableViewCell.swift */; };
 		A9DD3F8028659CCA00E47F6F /* TodayWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F7F28659CCA00E47F6F /* TodayWeatherCollectionViewCell.swift */; };
-		A9DD3F822865A66A00E47F6F /* TodayMsgCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F812865A66A00E47F6F /* TodayMsgCollectionViewCell.swift */; };
+		A9DD3F822865A66A00E47F6F /* TodayMsgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F812865A66A00E47F6F /* TodayMsgTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		A9DD3F782865821C00E47F6F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		A9DD3F7D28658CE100E47F6F /* TodayWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherTableViewCell.swift; sourceTree = "<group>"; };
 		A9DD3F7F28659CCA00E47F6F /* TodayWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
-		A9DD3F812865A66A00E47F6F /* TodayMsgCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMsgCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9DD3F812865A66A00E47F6F /* TodayMsgTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMsgTableViewCell.swift; sourceTree = "<group>"; };
 		B9121BCFD0EED15BC7847F9A /* Pods-Weather-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather-Clone.release.xcconfig"; path = "Target Support Files/Pods-Weather-Clone/Pods-Weather-Clone.release.xcconfig"; sourceTree = "<group>"; };
 		FD9171073D7B69AFC3C5C182 /* Pods_Weather_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -179,9 +179,9 @@
 		A9DD3F7C28658B1100E47F6F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				A9DD3F812865A66A00E47F6F /* TodayMsgTableViewCell.swift */,
 				A9DD3F7D28658CE100E47F6F /* TodayWeatherTableViewCell.swift */,
 				A9DD3F7F28659CCA00E47F6F /* TodayWeatherCollectionViewCell.swift */,
-				A9DD3F812865A66A00E47F6F /* TodayMsgCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -317,7 +317,7 @@
 				A9DB8966285B27D30057E483 /* AppDelegate.swift in Sources */,
 				A9DD3F792865821C00E47F6F /* UIColor.swift in Sources */,
 				A9DB8968285B27D30057E483 /* SceneDelegate.swift in Sources */,
-				A9DD3F822865A66A00E47F6F /* TodayMsgCollectionViewCell.swift in Sources */,
+				A9DD3F822865A66A00E47F6F /* TodayMsgTableViewCell.swift in Sources */,
 				A9DD3F65286364A700E47F6F /* Image.swift in Sources */,
 				A9DD3F67286364B900E47F6F /* Const.swift in Sources */,
 				A9DD3F762865812D00E47F6F /* HeaderView.swift in Sources */,

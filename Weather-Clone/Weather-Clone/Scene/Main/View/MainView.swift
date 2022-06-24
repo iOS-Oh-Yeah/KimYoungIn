@@ -20,7 +20,7 @@ final class MainView: UIView {
         $0.font = UIFont.systemFont(ofSize: 34)
     }
     
-    let tableView = UITableView(frame: .zero, style: .insetGrouped)
+    private let tableView = UITableView(frame: .zero, style: .insetGrouped)
     
     // MARK: - Initializer
     
@@ -44,6 +44,7 @@ final class MainView: UIView {
     private func setTableViewUI() {
         tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
     }
     
     private func setLayout() {
@@ -64,6 +65,7 @@ final class MainView: UIView {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.register(TodayMsgTableViewCell.self, forCellReuseIdentifier: TodayMsgTableViewCell.cellIdentifier)
         tableView.register(TodayWeatherTableViewCell.self, forCellReuseIdentifier: TodayWeatherTableViewCell.cellIdentifier)
     }
     
@@ -79,14 +81,20 @@ extension MainView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: TodayWeatherTableViewCell.cellIdentifier) as? TodayWeatherTableViewCell else { return UITableViewCell() }
-            return cell
+            if indexPath.row == 0 {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: TodayMsgTableViewCell.cellIdentifier) as? TodayMsgTableViewCell else { return UITableViewCell() }
+                cell.selectionStyle = .none
+                return cell
+            } else {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: TodayWeatherTableViewCell.cellIdentifier) as? TodayWeatherTableViewCell else { return UITableViewCell() }
+                return cell
+            }
         case 1:
             return UITableViewCell()
         default:
@@ -97,7 +105,11 @@ extension MainView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
-            return 100
+            if indexPath.row == 0 {
+                return 40
+            } else {
+                return 110
+            }
         case 1:
             return 500
         default:

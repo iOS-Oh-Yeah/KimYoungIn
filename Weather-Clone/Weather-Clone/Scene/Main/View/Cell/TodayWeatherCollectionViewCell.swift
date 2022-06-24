@@ -12,6 +12,8 @@ import Then
 
 final class TodayWeatherCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - Properties
+    
     static var cellIdentifier: String { return String(describing: self) }
     
     private var timeLabel = UILabel().then {
@@ -40,6 +42,8 @@ final class TodayWeatherCollectionViewCell: UICollectionViewCell {
         $0.addArrangedSubview(numLabel)
     }
     
+    // MARK: - Initializer
+    
     override init(frame: CGRect) {
         super.init(frame: .zero)
         configUI()
@@ -49,6 +53,8 @@ final class TodayWeatherCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Function
     
     private func configUI() {
         backgroundColor  = .clear
