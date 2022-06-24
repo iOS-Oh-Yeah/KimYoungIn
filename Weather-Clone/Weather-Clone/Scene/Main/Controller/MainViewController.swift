@@ -35,6 +35,7 @@ class MainViewController: UIViewController {
         
         mainView.snp.makeConstraints {
             $0.top.leading.trailing.equalTo(view.safeAreaLayoutGuide)
+            $0.bottom.equalToSuperview()
         }
     }
     

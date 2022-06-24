@@ -57,7 +57,6 @@ final class MainView: UIView {
         tableView.snp.makeConstraints {
             $0.top.equalTo(regionLabel).offset(40)
             $0.leading.trailing.bottom.equalTo(safeAreaLayoutGuide)
-            $0.height.equalTo(1000)
         }
     }
     
