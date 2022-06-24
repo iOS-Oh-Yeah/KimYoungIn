@@ -14,12 +14,6 @@ final class MainView: UIView {
     
     // MARK: - Properties
     
-    private var regionLabel = UILabel().then {
-        $0.text = "부천시"
-        $0.textColor = .white
-        $0.font = UIFont.systemFont(ofSize: 34)
-    }
-    
     private let tableView = UITableView(frame: .zero, style: .insetGrouped)
     
     // MARK: - Initializer
@@ -48,15 +42,9 @@ final class MainView: UIView {
     }
     
     private func setLayout() {
-        addSubview(regionLabel)
-        regionLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(30)
-            $0.centerX.equalToSuperview()
-        }
-        
         addSubview(tableView)
         tableView.snp.makeConstraints {
-            $0.top.equalTo(regionLabel).offset(40)
+            $0.top.equalToSuperview()
             $0.leading.trailing.bottom.equalTo(safeAreaLayoutGuide)
         }
     }
