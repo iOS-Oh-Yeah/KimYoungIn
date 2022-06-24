@@ -94,7 +94,7 @@ extension MainView: UITableViewDataSource {
         switch indexPath.section {
         case 0:
             if indexPath.row == 0 {
-                return 40
+                return 45
             } else {
                 return 110
             }

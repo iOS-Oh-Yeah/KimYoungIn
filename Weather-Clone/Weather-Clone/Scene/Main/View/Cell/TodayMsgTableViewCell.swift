@@ -23,7 +23,7 @@ final class TodayMsgTableViewCell: UITableViewCell {
     }
     
     private var lineView = UIView().then {
-        $0.backgroundColor = .white.withAlphaComponent(0.8)
+        $0.backgroundColor = .white.withAlphaComponent(0.6)
     }
     
     // MARK: - Initializer
@@ -48,12 +48,13 @@ final class TodayMsgTableViewCell: UITableViewCell {
         contentView.addSubview(msgLabel)
         msgLabel.snp.makeConstraints {
             $0.top.leading.equalToSuperview().inset(10)
+            $0.centerY.equalToSuperview()
         }
         
         contentView.addSubview(lineView)
         lineView.snp.makeConstraints {
             $0.height.equalTo(0.5)
-            $0.leading.equalToSuperview().inset(5)
+            $0.leading.equalToSuperview().inset(10)
             $0.bottom.trailing.equalToSuperview()
         }
     }

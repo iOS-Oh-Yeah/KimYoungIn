@@ -32,7 +32,7 @@ final class TodayWeatherCollectionViewCell: UICollectionViewCell {
         $0.textColor = .white
     }
     
-    lazy var todayStackView = UIStackView().then {
+    private lazy var todayStackView = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 15
         $0.alignment = .center
