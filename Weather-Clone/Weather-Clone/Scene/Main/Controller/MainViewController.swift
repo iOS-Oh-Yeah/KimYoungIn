@@ -14,8 +14,6 @@ class MainViewController: UIViewController {
     
     // MARK: - Properties
     
-    private lazy var stickyHeaderView = StickyHeaderView()
-    private lazy var headerView = HeaderView()
     private lazy var mainView = MainView()
     
     // MARK: - Life Cycle
@@ -33,24 +31,10 @@ class MainViewController: UIViewController {
     }
     
     private func setLayout() {
-//        view.addSubview(stickyHeaderView)
-//        stickyHeaderView.snp.makeConstraints {
-//            $0.top.equalToSuperview().inset(80)
-//            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide)
-//        }
-        
-        view.addSubview(headerView)
-        headerView.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(80)
-            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide)
-        }
-        
         view.addSubview(mainView)
         mainView.snp.makeConstraints {
-            $0.top.equalTo(headerView.snp.bottom)
-            $0.leading.trailing.bottom.equalTo(view.safeAreaLayoutGuide)
+            $0.top.leading.trailing.bottom.equalTo(view.safeAreaLayoutGuide)
         }
     }
-    
 }
 

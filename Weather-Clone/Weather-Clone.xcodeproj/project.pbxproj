@@ -23,6 +23,10 @@
 		A9DD3F8028659CCA00E47F6F /* TodayWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F7F28659CCA00E47F6F /* TodayWeatherCollectionViewCell.swift */; };
 		A9DD3F822865A66A00E47F6F /* TodayMsgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F812865A66A00E47F6F /* TodayMsgTableViewCell.swift */; };
 		A9DD3F842865D5B600E47F6F /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F832865D5B600E47F6F /* UILabel+.swift */; };
+		A9DD3F862865DA3A00E47F6F /* MainView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F852865DA3A00E47F6F /* MainView+Extension.swift */; };
+		A9DD3F8C2865E22000E47F6F /* WeekWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F8B2865E22000E47F6F /* WeekWeatherTableViewCell.swift */; };
+		A9DD3F8E2865E26700E47F6F /* WeekMsgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F8D2865E26700E47F6F /* WeekMsgTableViewCell.swift */; };
+		A9DD3F902865E75C00E47F6F /* WeekWeatherInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3F8F2865E75C00E47F6F /* WeekWeatherInfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		A9DD3F7F28659CCA00E47F6F /* TodayWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		A9DD3F812865A66A00E47F6F /* TodayMsgTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMsgTableViewCell.swift; sourceTree = "<group>"; };
 		A9DD3F832865D5B600E47F6F /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		A9DD3F852865DA3A00E47F6F /* MainView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+Extension.swift"; sourceTree = "<group>"; };
+		A9DD3F8B2865E22000E47F6F /* WeekWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekWeatherTableViewCell.swift; sourceTree = "<group>"; };
+		A9DD3F8D2865E26700E47F6F /* WeekMsgTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekMsgTableViewCell.swift; sourceTree = "<group>"; };
+		A9DD3F8F2865E75C00E47F6F /* WeekWeatherInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekWeatherInfoTableViewCell.swift; sourceTree = "<group>"; };
 		B9121BCFD0EED15BC7847F9A /* Pods-Weather-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather-Clone.release.xcconfig"; path = "Target Support Files/Pods-Weather-Clone/Pods-Weather-Clone.release.xcconfig"; sourceTree = "<group>"; };
 		FD9171073D7B69AFC3C5C182 /* Pods_Weather_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,9 +153,8 @@
 		A9DD3F5F2863625800E47F6F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A9DD3F68286366F600E47F6F /* MainView.swift */,
-				A9DD3F732865812600E47F6F /* StickyHeaderView.swift */,
-				A9DD3F752865812D00E47F6F /* HeaderView.swift */,
+				A9DD3F882865DA7B00E47F6F /* Main */,
+				A9DD3F872865DA6400E47F6F /* Header */,
 				A9DD3F7C28658B1100E47F6F /* Cell */,
 			);
 			path = View;
@@ -182,11 +189,48 @@
 		A9DD3F7C28658B1100E47F6F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				A9DD3F892865E1AE00E47F6F /* TodayWeatherCell */,
+				A9DD3F8A2865E1BE00E47F6F /* WeekWeatherCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A9DD3F872865DA6400E47F6F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				A9DD3F732865812600E47F6F /* StickyHeaderView.swift */,
+				A9DD3F752865812D00E47F6F /* HeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		A9DD3F882865DA7B00E47F6F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A9DD3F68286366F600E47F6F /* MainView.swift */,
+				A9DD3F852865DA3A00E47F6F /* MainView+Extension.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A9DD3F892865E1AE00E47F6F /* TodayWeatherCell */ = {
+			isa = PBXGroup;
+			children = (
 				A9DD3F812865A66A00E47F6F /* TodayMsgTableViewCell.swift */,
 				A9DD3F7D28658CE100E47F6F /* TodayWeatherTableViewCell.swift */,
 				A9DD3F7F28659CCA00E47F6F /* TodayWeatherCollectionViewCell.swift */,
 			);
-			path = Cell;
+			path = TodayWeatherCell;
+			sourceTree = "<group>";
+		};
+		A9DD3F8A2865E1BE00E47F6F /* WeekWeatherCell */ = {
+			isa = PBXGroup;
+			children = (
+				A9DD3F8D2865E26700E47F6F /* WeekMsgTableViewCell.swift */,
+				A9DD3F8B2865E22000E47F6F /* WeekWeatherTableViewCell.swift */,
+				A9DD3F8F2865E75C00E47F6F /* WeekWeatherInfoTableViewCell.swift */,
+			);
+			path = WeekWeatherCell;
 			sourceTree = "<group>";
 		};
 		D8FFA9EC15CF47E0859530C5 /* Pods */ = {
@@ -314,6 +358,7 @@
 			files = (
 				A9DD3F7E28658CE100E47F6F /* TodayWeatherTableViewCell.swift in Sources */,
 				A9DB896A285B27D30057E483 /* MainViewController.swift in Sources */,
+				A9DD3F902865E75C00E47F6F /* WeekWeatherInfoTableViewCell.swift in Sources */,
 				A9DD3F742865812600E47F6F /* StickyHeaderView.swift in Sources */,
 				A9DD3F69286366F600E47F6F /* MainView.swift in Sources */,
 				A9DD3F8028659CCA00E47F6F /* TodayWeatherCollectionViewCell.swift in Sources */,
@@ -322,7 +367,10 @@
 				A9DB8968285B27D30057E483 /* SceneDelegate.swift in Sources */,
 				A9DD3F822865A66A00E47F6F /* TodayMsgTableViewCell.swift in Sources */,
 				A9DD3F65286364A700E47F6F /* Image.swift in Sources */,
+				A9DD3F8C2865E22000E47F6F /* WeekWeatherTableViewCell.swift in Sources */,
+				A9DD3F8E2865E26700E47F6F /* WeekMsgTableViewCell.swift in Sources */,
 				A9DD3F67286364B900E47F6F /* Const.swift in Sources */,
+				A9DD3F862865DA3A00E47F6F /* MainView+Extension.swift in Sources */,
 				A9DD3F762865812D00E47F6F /* HeaderView.swift in Sources */,
 				A9DD3F842865D5B600E47F6F /* UILabel+.swift in Sources */,
 			);

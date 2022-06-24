@@ -22,7 +22,7 @@ final class TodayWeatherCollectionViewCell: UICollectionViewCell {
         $0.textColor = .white
     }
     
-    private var weatherImage = UIImageView().then {
+    private var weatherImageView = UIImageView().then {
         $0.image = Const.Image.cloud
     }
     
@@ -38,7 +38,7 @@ final class TodayWeatherCollectionViewCell: UICollectionViewCell {
         $0.alignment = .center
         $0.distribution = .fillEqually
         $0.addArrangedSubview(timeLabel)
-        $0.addArrangedSubview(weatherImage)
+        $0.addArrangedSubview(weatherImageView)
         $0.addArrangedSubview(numLabel)
     }
     
@@ -67,7 +67,7 @@ final class TodayWeatherCollectionViewCell: UICollectionViewCell {
             $0.centerY.equalTo(safeAreaLayoutGuide)
         }
         
-        weatherImage.snp.makeConstraints {
+        weatherImageView.snp.makeConstraints {
             $0.height.equalTo(20)
             $0.width.equalTo(25)
         }
